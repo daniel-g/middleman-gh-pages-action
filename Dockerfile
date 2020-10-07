@@ -14,7 +14,7 @@ LABEL "repository"="http://github.com/yurikoval/middleman-gh-pages-action"
 
 RUN apt-get update; \
   apt-get install -y --no-install-recommends nodejs; \
-  apt-get install yarn;
+  apt-get install -y --no-install-recommends yarn;
 
 ADD entrypoint.sh /entrypoint.sh
 
