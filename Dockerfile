@@ -13,8 +13,9 @@ LABEL "com.github.actions.color"="orange"
 LABEL "repository"="http://github.com/yurikoval/middleman-gh-pages-action"
 
 RUN apt-get update; \
-  apt-get install -y --no-install-recommends nodejs; \
-  apt-get install -y --no-install-recommends yarn;
+  apt-get install -y --no-install-recommends nodejs;
+
+RUN npm install -g yarn;
 
 ADD entrypoint.sh /entrypoint.sh
 
