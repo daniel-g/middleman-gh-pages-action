@@ -9,7 +9,7 @@ bundle install
 bundle list | grep "middleman ("
 
 echo 'Installing node modules...'
-yarn install
+yarn
 
 echo 'Building site...'
 bundle exec middleman build
