@@ -8,6 +8,9 @@ gem install bundler
 bundle install
 bundle list | grep "middleman ("
 
+echo 'Installing node modules...'
+yarn install
+
 echo 'Building site...'
 bundle exec middleman build
 
